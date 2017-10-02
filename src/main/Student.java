@@ -7,6 +7,13 @@ public class Student {
 	private int ID;
 	private String username;
 	
+	public Student(String name, int age, String DOB, int ID){
+		this.Name = name;
+		this.age = age;
+		this.DOB = DOB;
+		this.ID = ID;
+	}
+	
 	public String getName() {
 		return Name;
 	}
