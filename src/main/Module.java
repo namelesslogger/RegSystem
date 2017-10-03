@@ -7,6 +7,11 @@ public class Module {
 	private String ID;
 	private ArrayList<Student> StudentList;
 	
+	public Module (String modName, String id){
+		this.ModuleName = modName;
+		this.ID =id;
+	}
+	
 	public String getModuleName() {
 		return ModuleName;
 	}
@@ -29,6 +34,10 @@ public class Module {
 	
 	public void setStudentList(ArrayList<Student> studentList) {
 		StudentList = studentList;
+	}
+	
+	public void addStudent(Student student) {
+		StudentList.add(student);
 	}
 	
 }
