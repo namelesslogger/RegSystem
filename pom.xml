@@ -3,7 +3,6 @@
   <groupId>SE3assignment1</groupId>
   <artifactId>RegSystem</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  
   <build>
   <plugins>
     <plugin>
@@ -18,7 +17,7 @@
     </plugin>
   </plugins>
   </build>
-  
+   
   <distributionManagement>  
     <repository>
         <id>SE3assignment1</id>
@@ -26,11 +25,12 @@
     </repository>
   </distributionManagement> 
   
+  
   <dependencies>
   	<dependency>
-      <groupId>joda-time</groupId>
-   	  <artifactId>joda-time</artifactId>
-   	  <version>2.9</version>
+    	<groupId>joda-time</groupId>
+    	<artifactId>joda-time</artifactId>
+    	<version>2.9</version>
 	</dependency>
 	<dependency>
       <groupId>junit</groupId>
