@@ -3,20 +3,38 @@
   <groupId>SE3assignment1</groupId>
   <artifactId>RegSystem</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+   
+  
   <build>
-  <plugins>
-    <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-jar-plugin</artifactId>
-        <version>3.0.2</version>
-        <configuration>
-          <includes>
-            <include>**/src/*</include>
-          </includes>
-        </configuration>
-    </plugin>
-  </plugins>
-  </build>
+    <directory>target</directory>
+    <outputDirectory>target/classes</outputDirectory>
+    <finalName>${project.artifactId}-${project.version}</finalName>
+    <testOutputDirectory>target/test-classes</testOutputDirectory>
+    <sourceDirectory>src/main</sourceDirectory>
+    <scriptSourceDirectory>src/main</scriptSourceDirectory>
+    <testSourceDirectory>src/main</testSourceDirectory>
+    <testResources>
+        <testResource>
+            <directory>src/test</directory>
+        </testResource>
+    </testResources>
+
+    <plugins>
+        <plugin>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>2.3.2</version>
+        </plugin>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-jar-plugin</artifactId>
+            <version>2.4</version>
+        </plugin>
+
+    </plugins>
+  </build> 
    
   <distributionManagement>  
     <repository>
