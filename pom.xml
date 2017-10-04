@@ -4,6 +4,21 @@
   <artifactId>RegSystem</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
+  <build>
+  <plugins>
+    <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>3.0.2</version>
+        <configuration>
+          <includes>
+            <include>**/src/*</include>
+          </includes>
+        </configuration>
+    </plugin>
+  </plugins>
+  </build>
+  
   <distributionManagement>  
     <repository>
         <id>SE3assignment1</id>
