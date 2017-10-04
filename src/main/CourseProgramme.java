@@ -10,6 +10,10 @@ public class CourseProgramme {
 	private DateTime StartDate;
 	private DateTime EndDate;
 	
+	public CourseProgramme(String CourseName){
+		this.CourseName = CourseName;
+	}
+	
 	public String getCourseName() {
 		return CourseName;
 	}
@@ -24,6 +28,10 @@ public class CourseProgramme {
 	
 	public void setModuleList(ArrayList<Module> moduleList) {
 		ModuleList = moduleList;
+	}
+	
+	public void addModule(Module module) {
+		ModuleList.add(module);
 	}
 	
 	public DateTime getStartDate() {
