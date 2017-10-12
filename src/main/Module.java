@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Module {
 	private String ModuleName;
 	private String ID;
-	private ArrayList<Student> StudentList;
+	private ArrayList<Student> StudentList = new ArrayList<Student>();
 	
 	public Module (String modName, String id){
 		this.ModuleName = modName;
